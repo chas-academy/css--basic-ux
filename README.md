@@ -2,7 +2,24 @@
 
 Vi fortsätter med styling även denna vecka och introducerar grundläggande UX- och tillgänglighetsprinciper i och med att de många gånger går hand i hand. Syftet med denna uppgift är att göra er statiska webbsida så tillgänglig och responsiv som möjligt.
 
-### Gör färdigt stylingen från förra veckan om det fortfarande återstår något
+## Förberedelser
+
+- Kopiera över HTML-filerna från förra veckans arbete
+- Lägg in följande script-tag `<script type="module" src="/src/main.js"></script>` inuti body på vardera fil enligt exemplet nedan:
+
+```
+</head>
+<body>
+    <script type="module" src="/src/main.js"></script>
+    ...
+</body>
+```
+
+- Öppna terminalen, se till att du befinner dig i denna mapp (`css--basic-ux`) och skriv följande kommandon
+  - `npm install` - för att installera projektets dependencies (Externa JavaScript-bibliotek) inklusive a11y-checker som är vårt tillgänglighetsverktyg för denna övning.
+  - `npm run dev`- för att spinna upp en utvecklingsmiljö. Detta kommer bl.a. med fördelen att programmet automatiskt laddas om varje gång ni sparar en ändring så att sidan inte behöver laddas om manuellt.
+  - Gå sedan till länken till er utvecklingsmiljö som visas i terminalen - Troligtvis `http://localhost:5174/`.
+- Gör också färdigt stylingen från förra veckan om det fortfarande återstår något
 
 ## ☯️ Fokuspunkter
 
@@ -26,18 +43,14 @@ Hur ser sidan ut på olika skärmstorlekar? Blir layouten rörigt på mobil? Anv
 
 Skapa relevanta `@media` queries så att sidan ser bra ut och är enkel att navigera även på en mobilskärm. Glöm inte att skifta mellan liten och stor skärm för att säkerställa att ändringarna inte har några oönskade biverkningar.
 
-## 👩‍🔧 Fixa övrig tillgänglighet
+## 👩‍🔧 Fixa övriga tillgänglighetsproblem
 
-- [ ] Sidan är läsbar och fullt fungerande även vid 200% zoom.
-- [ ] "alt"-attribut på alla bilder
-- [ ] `<label>` på alla input-fält
-- [ ] Rätt språk är satt på HTML-filerna
-- [ ] Det går att navigera sidan med tangentbordet
+Öppna konsollen i DevTools och gå igenom alla varningar och felmeddelanden. De försvinner när de är lösta.
 
-## 👩‍🎨 CSS Variables
-
-Skapa variabler för alla värden som används upprepade gånger.
+Om man föredrar att analysera tillgänglighet på andra vis kan man antingen ladda upp sina filer via [WC3 Markup Validation Service](https://validator.w3.org/#validate_by_upload) eller installera dera VS Code-tillägg - [W3C Web Validator](https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator).
 
 ## 🎁 Bonusuppgifter
 
-### ???
+### CSS Variables
+
+Skapa variabler för alla värden som används upprepade gånger.
