@@ -7,7 +7,7 @@ Vi fortsätter med styling även denna vecka och introducerar grundläggande UX-
 - Kopiera över HTML-filerna från förra veckans arbete
 - Lägg in följande script-tag `<script type="module" src="/src/main.js"></script>` inuti body på vardera fil enligt exemplet nedan:
 
-```
+```html
 </head>
 <body>
     <script type="module" src="/src/main.js"></script>
